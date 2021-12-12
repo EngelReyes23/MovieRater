@@ -1,10 +1,11 @@
 import movies from "../../data/movies.json";
 import MoviesCard from "./MoviesCard";
+import styles from "./MoviesGrid.module.css";
 
 const MoviesGrid = () => {
 	return (
-		<main className="container">
-			<div className="row row-cols-1 row-cols-md-4 g-4">
+		<main>
+			<div className={styles.moviesGrid}>
 				{movies.map((movie) => (
 					<MoviesCard key={movie.id} movie={movie} />
 				))}

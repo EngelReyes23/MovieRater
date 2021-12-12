@@ -1,0 +1,21 @@
+.card {
+	min-width: 230px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+	color: rgb(139, 0, 93);
+}
+
+.card_img {
+	width: 230px;
+	height: 345px;
+	background-color: aliceblue;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
