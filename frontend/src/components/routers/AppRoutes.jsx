@@ -5,6 +5,7 @@ import {
 	Route,
 	Navigate,
 } from "react-router-dom";
+import MovieDetails from "../movies/MovieDetails";
 import { HomeScreen } from "../screens/HomeScreen";
 import LoginScreen from "../screens/LoginScreen";
 
@@ -20,6 +21,9 @@ const AppRoutes = () => {
 
 				{/* LoginScreen */}
 				<Route path="/login" element={<LoginScreen />} />
+
+				{/* MovieDetails */}
+				<Route path="/movie/:id" element={<MovieDetails />} />
 			</Routes>
 		</Router>
 	);
