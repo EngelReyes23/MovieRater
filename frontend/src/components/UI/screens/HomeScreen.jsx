@@ -6,7 +6,9 @@ export const HomeScreen = () => {
 	return (
 		<div>
 			<Header />
-			<MoviesGrid />
+			<main>
+				<MoviesGrid />
+			</main>
 		</div>
 	);
 };

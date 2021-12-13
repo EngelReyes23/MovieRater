@@ -5,15 +5,15 @@ import {
 	Route,
 	Navigate,
 } from "react-router-dom";
-import MovieDetails from "../movies/MovieDetails";
-import { HomeScreen } from "../screens/HomeScreen";
-import LoginScreen from "../screens/LoginScreen";
+import MovieDetails from "../UI/movies/MovieDetails";
+import { HomeScreen } from "../UI/screens/HomeScreen";
+import LoginScreen from "../UI/screens/LoginScreen";
 
 const AppRoutes = () => {
 	return (
 		<Router>
 			<Routes>
-				{/* Para culaquier ruta que no coincida */}
+				{/* For any route that does not match */}
 				<Route path="/*" element={<Navigate to="/login" />} />
 
 				{/* HomeScreen */}

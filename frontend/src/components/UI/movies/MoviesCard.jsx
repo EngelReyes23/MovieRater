@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./MoviesCard.module.css";
+import styles from "./styles/MoviesCard.module.css";
 
 const MoviesCard = ({ movie }) => {
 	const { title, id, poster_path } = movie;

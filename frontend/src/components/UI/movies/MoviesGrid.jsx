@@ -1,6 +1,6 @@
-import movies from "../../data/movies.json";
+import movies from "../../../data/movies";
 import MoviesCard from "./MoviesCard";
-import styles from "./MoviesGrid.module.css";
+import styles from "./styles/MoviesGrid.module.css";
 
 const MoviesGrid = () => {
 	return (
