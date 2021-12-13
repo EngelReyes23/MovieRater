@@ -16,7 +16,7 @@ const MoviesCard = ({ movie }) => {
 					</div>
 					<div>
 						<h3>{title}</h3>
-						<p>{release_date}</p>
+						<p>{release_date.substring(0, 4)}</p>
 					</div>
 				</div>
 			</Link>
