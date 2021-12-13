@@ -7,15 +7,16 @@
 }
 
 .card:hover {
-	color: rgb(139, 0, 93);
+	color: #fff;
+	transform: scale(1.1);
+	text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+		#ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+		#ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+	transition: all 0.2 ease;
 }
 
 .card_img {
 	width: 230px;
 	height: 345px;
-	background-color: aliceblue;
-}
-
-.card:hover {
-	transform: scale(1.1);
+	border-radius: 0.5rem;
 }

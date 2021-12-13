@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles/MoviesCard.module.css";
 
 const MoviesCard = ({ movie }) => {
-	const { title, id, poster_path } = movie;
+	const { title, id, poster_path, release_date } = movie;
 	return (
 		<>
 			<Link to={`/movie/${id}`} className={styles.card}>
@@ -16,6 +16,7 @@ const MoviesCard = ({ movie }) => {
 					</div>
 					<div>
 						<h3>{title}</h3>
+						<p>{release_date}</p>
 					</div>
 				</div>
 			</Link>

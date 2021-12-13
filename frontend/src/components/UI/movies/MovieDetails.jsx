@@ -13,7 +13,34 @@ const MovieDetails = () => {
 	return (
 		<>
 			<Header />
-			<div className={`animate__animated animate__fadeIn`}></div>
+			<div className={`${styles.container} animate__animated animate__fadeIn`}>
+				<article className={styles.card}>
+					<div>
+						<img
+							src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
+							alt={title}
+							className={styles.poster}
+						/>
+					</div>
+					<div className={styles.details}>
+						<p>
+							<strong>Title: </strong>
+							{title}
+						</p>
+						<p>
+							<strong>Description: </strong>
+							{overview}
+						</p>
+						<p>
+							<strong>Release Date: </strong>
+							{release_date}
+						</p>
+						<button className={styles.button} onClick={() => navigate(-1)}>
+							Go back
+						</button>
+					</div>
+				</article>
+			</div>
 		</>
 	);
 };

@@ -14,7 +14,7 @@ const AppRoutes = () => {
 		<Router>
 			<Routes>
 				{/* For any route that does not match */}
-				<Route path="/*" element={<Navigate to="/login" />} />
+				<Route path="/*" element={<Navigate to="/home" />} />
 
 				{/* HomeScreen */}
 				<Route path="/home" element={<HomeScreen />} />
