@@ -4,11 +4,11 @@ import MoviesGrid from "../movies/MoviesGrid";
 
 export const HomeScreen = () => {
 	return (
-		<div>
+		<>
 			<Header />
 			<main>
 				<MoviesGrid />
 			</main>
-		</div>
+		</>
 	);
 };
