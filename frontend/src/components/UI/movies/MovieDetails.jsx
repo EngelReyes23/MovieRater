@@ -17,10 +17,6 @@ const MovieDetails = () => {
 		});
 	}, [id]);
 
-	const { title, overview, poster_path, release_date } = data;
-
-	// Search for parameter.
-
 	// Navigation
 	const navigate = useNavigate();
 
@@ -33,6 +29,8 @@ const MovieDetails = () => {
 			navigate(-1);
 		}, 200);
 	};
+
+	const { title, overview, poster_path, release_date } = data;
 
 	return (
 		<>
@@ -55,6 +53,10 @@ const MovieDetails = () => {
 							<p>
 								<strong>Title: </strong>
 								{title}
+							</p>
+							<p>
+								<strong>Genres: </strong>
+								{data.genres.map((genre) => genre.name).join(", ")}
 							</p>
 							<p>
 								<strong>Description: </strong>
